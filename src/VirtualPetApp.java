@@ -8,9 +8,9 @@ public class VirtualPetApp {
 		VirtualPet theDanimal = new VirtualPet();
 
 		System.out.println("Meet the Danimal:");
-		System.out.println("The Danimal is not hungry: " + theDanimal.hunger);
-		System.out.println("The Danimal is bored: " + theDanimal.boredom);
-		System.out.println("The Danimal is not sleepy: " + theDanimal.tired);
+		System.out.println("The Danimal is not hungry: " + theDanimal.hungerLevel);
+		System.out.println("The Danimal is bored: " + theDanimal.boredomLevel);
+		System.out.println("The Danimal is not sleepy: " + theDanimal.tirednessLevel);
 		System.out.println("Please select an option below by entering the corresponding number:");
 		System.out.println("1.  Let's Eat!");
 		System.out.println("2.  Let's Dance!");
@@ -21,19 +21,23 @@ public class VirtualPetApp {
 
 		switch (menuEntry) {
 		case "1":
-			System.out.println("Let's Eat!");
 			int food = 2;
 			theDanimal.letsEat(food);
-			System.out.println("Nom Nom Nom" + theDanimal.hunger);
+			System.out.println("Nom Nom Nom" + theDanimal.hungerLevel);
 			break;
 		case "2":
 			int fun = 5;
 			theDanimal.letsDance(fun);
-			System.out.println("Let's dance\r\n" + "Put on your red shoes and dance the blues\r\n" + "Let's dance\r\n"
-					+ "To the song they're playin' on the radio\r\n" + theDanimal.boredom);
+			System.out.println("Put on your red shoes and dance the blues" + theDanimal.boredomLevel);
 			break;
-			
-			
+
+		case "3":
+			int sleep = 5;
+			theDanimal.letsReadABedtimeStory(sleep);
+			System.out.println("Once upon a time... " + theDanimal.tirednessLevel);
+			break;
+
+		case "4":
 
 		}
 

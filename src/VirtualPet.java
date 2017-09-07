@@ -2,17 +2,21 @@
 public class VirtualPet {
 
 	// Attributes & Initial Values
-	int hunger = 8;
-	int boredom = 5;
-	int tired = 10;
+	int hungerLevel = 8;
+	int boredomLevel = 5;
+	int tirednessLevel = 10;
 
 	// Activities
 	
 	void letsEat (int food) {
-		hunger += food;
+		hungerLevel += food;
 	}
 	
 	void letsDance (int fun) {
-		boredom += fun;
+		boredomLevel += fun;
+	}
+	
+	void letsReadABedtimeStory (int sleep) {
+		tirednessLevel += sleep;
 	}
 }
