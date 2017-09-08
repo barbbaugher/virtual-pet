@@ -27,7 +27,7 @@ public class VirtualPet {
 
 	public String status() {
 
-		return ("Hunger Level " + hungerLevel + "\nBoredom Level " + boredomLevel + "\nTiredness Level "
+		return ("Hunger Level: " + hungerLevel + "\nBoredom Level: " + boredomLevel + "\nTiredness Level: "
 				+ tirednessLevel + "\n");
 
 	}

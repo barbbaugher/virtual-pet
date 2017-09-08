@@ -11,20 +11,20 @@ public class VirtualPetApp {
 
 		int tickTock = 0;
 
-		while (theDanimal.isTheDanimalAliveAndWell()) {
+		do {
 
 			System.out.println(theDanimal.status());
 			System.out.println(theDanimal.menu());
-			
+
 			String menuEntry = input.next();
-			
+
 			switch (menuEntry) {
 			case "1":
 				int food = 3;
 				theDanimal.letsEat(food);
 				System.out.println("Nom Nom Nom\n");
 				theDanimal.tickMethod(tickTock);
-				
+
 				break;
 			case "2":
 				int fun = 6;
@@ -43,16 +43,28 @@ public class VirtualPetApp {
 			case "4":
 				theDanimal.tickMethod(tickTock);
 				break;
-				
+
 			case "5":
 				System.out.println("Thanks for playing.");
 				System.exit(0);
 				break;
+			
+			default:
+				System.out.println("Please select a valid menu option.\n");
+				
 			}
 
+		} while (theDanimal.isTheDanimalAliveAndWell());
+
+		if (theDanimal.hungerLevel <= 0) {
+			System.out.println("You starved the Danimal to death...");
+		} else if (theDanimal.boredomLevel <= 0) {
+			System.out.println("You bored the Danimal to death...");
+		} else {
+			System.out.println("The Danimal died of exhaustion.");
 		}
-		
-		input.close();	
+
+		input.close();
 	}
 
 }
