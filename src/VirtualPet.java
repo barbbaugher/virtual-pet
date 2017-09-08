@@ -19,7 +19,7 @@ public class VirtualPet {
 
 	public String menu() {
 
-		return ("Please select an option below by entering the corresponding number:\n1.  Let's Eat!\n2.  Let's Dance! \n3.  Let's Read a Bedtime Story! \n4.  Or we can be lame and we can do nothing...");
+		return ("Please select an option below by entering the corresponding number:\n1.  Let's Eat!\n2.  Let's Dance! \n3.  Let's Read a Bedtime Story! \n4.  Or we can be lame and we can do nothing...\n5.  Exit the program\n");
 
 	}
 
@@ -28,7 +28,7 @@ public class VirtualPet {
 	public String status() {
 
 		return ("Hunger Level " + hungerLevel + "\nBoredom Level " + boredomLevel + "\nTiredness Level "
-				+ tirednessLevel);
+				+ tirednessLevel + "\n");
 
 	}
 
@@ -57,4 +57,10 @@ public class VirtualPet {
 	
 	// Is the Danimal still alive?
 	
+	Boolean isTheDanimalAliveAndWell() {
+		if (hungerLevel > 0 && boredomLevel > 0 && tirednessLevel > 0) {
+			return true;
+		}
+		return false;
+	}
 }
