@@ -45,4 +45,16 @@ public class VirtualPet {
 	void letsReadABedtimeStory(int sleep) {
 		tirednessLevel += sleep;
 	}
+	
+	// Tick Method
+	
+	void tickMethod (int tickTock) {
+		tickTock++;
+		hungerLevel--;
+		boredomLevel-=3;
+		tirednessLevel--;
+	}
+	
+	// Is the Danimal still alive?
+	
 }
