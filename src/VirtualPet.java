@@ -1,7 +1,7 @@
 
 public class VirtualPet {
 
-	// Attributes & Initial Status
+	// Attributes & initial status
 
 	int hungerLevel;
 	int boredomLevel;
@@ -14,8 +14,25 @@ public class VirtualPet {
 		tirednessLevel = tiredness;
 
 	}
+	
+	// The welcome display
+	
+	public String welcome() {
 
-	// Creating the display menu
+		return ("Meet the Danimal:\n        _________         .    .\r\n" + 
+				"       (..       \\_    ,  |\\  /|\r\n" + 
+				"        \\       0  \\  /|  \\ \\/ /\r\n" + 
+				"         \\______    \\/ |   \\  /\r\n" + 
+				"            vvvv\\    \\ |   /  |\r\n" + 
+				"            \\^^^^  ==   \\_/   |\r\n" + 
+				"             `\\_   ===    \\.  |\r\n" + 
+				"             / /\\_   \\ /      |\r\n" + 
+				"             |/   \\_  \\|      /\r\n" + 
+				"                    \\________/");
+
+	}
+
+	// The menu display
 
 	public String menu() {
 
@@ -23,7 +40,7 @@ public class VirtualPet {
 
 	}
 
-	// Creating the status display
+	// The status display
 
 	public String status() {
 
@@ -37,26 +54,41 @@ public class VirtualPet {
 	void letsEat(int food) {
 		hungerLevel += food;
 	}
+	
+	public String afterEating() {
+
+		return ("Nom, nom, nom...\n");
+	}
 
 	void letsDance(int fun) {
 		boredomLevel += fun;
+	}
+	
+	public String afterDancing() {
+
+		return ("Put on your red shoes and dance the blues...\n");
 	}
 
 	void letsReadABedtimeStory(int sleep) {
 		tirednessLevel += sleep;
 	}
 	
-	// Tick Method
-	
-	void tickMethod (int tickTock) {
+	public String afterSleeping() {
+
+		return ("Once upon a time...\n");
+	}
+
+	// Tick method
+
+	void tickMethod(int tickTock) {
 		tickTock++;
 		hungerLevel--;
-		boredomLevel-=3;
+		boredomLevel -= 2;
 		tirednessLevel--;
 	}
-	
+
 	// Is the Danimal still alive?
-	
+
 	Boolean isTheDanimalAliveAndWell() {
 		if (hungerLevel > 0 && boredomLevel > 0 && tirednessLevel > 0) {
 			return true;

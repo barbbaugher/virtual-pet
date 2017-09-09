@@ -7,7 +7,7 @@ public class VirtualPetApp {
 
 		VirtualPet theDanimal = new VirtualPet(8, 5, 10);
 
-		System.out.println("Meet the Danimal\n");
+		System.out.println(theDanimal.welcome());
 
 		int tickTock = 0;
 
@@ -19,24 +19,25 @@ public class VirtualPetApp {
 			String menuEntry = input.next();
 
 			switch (menuEntry) {
+			
 			case "1":
 				int food = 3;
 				theDanimal.letsEat(food);
-				System.out.println("Nom Nom Nom\n");
+				System.out.println(theDanimal.afterEating());
 				theDanimal.tickMethod(tickTock);
-
 				break;
+
 			case "2":
 				int fun = 6;
 				theDanimal.letsDance(fun);
-				System.out.println("Put on your red shoes and dance the blues...\n");
+				System.out.println(theDanimal.afterDancing());
 				theDanimal.tickMethod(tickTock);
 				break;
 
 			case "3":
 				int sleep = 5;
 				theDanimal.letsReadABedtimeStory(sleep);
-				System.out.println("Once upon a time...\n");
+				System.out.println(theDanimal.afterSleeping());
 				theDanimal.tickMethod(tickTock);
 				break;
 
@@ -48,10 +49,10 @@ public class VirtualPetApp {
 				System.out.println("Thanks for playing.");
 				System.exit(0);
 				break;
-			
+
 			default:
 				System.out.println("Please select a valid menu option.\n");
-				
+
 			}
 
 		} while (theDanimal.isTheDanimalAliveAndWell());
