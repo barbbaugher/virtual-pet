@@ -26,7 +26,7 @@ public class VirtualPet {
 	// The menu display
 
 	public String menu() {
-		return ("Please select an option below by entering the corresponding number:\n1.  Let's Eat!\n2.  Let's Dance! \n3.  Let's Read a Bedtime Story! \n4.  Or we can be lame and we can do nothing...\n5.  Exit the program\n");
+		return ("Please select an option below by entering the corresponding number:\n1.  Let's Eat!\n2.  Let's Dance! \n3.  Let's Read a Bedtime Story! \n4.  Or we can be lame and we can do nothing...\n5.  Exit the program.\n");
 	}
 
 	// Invalid menu option entered

@@ -25,11 +25,32 @@ To start the game the Danimal's hungerLevel is at 8, his boredomLevel is at 5, a
 
 Activities (methods)
 
-Let's Eat - to address his hungerLevel
+1.  Let's Eat! - to address his hungerLevel
+		hungerLevel + 3
 
-Let's Dance - to address his boredomLevel
+2.  Let's Dance! - to address his boredomLevel
+		boredomLevel + 6
 
-Let's Read a Bedtime Story - to address his tirednessLevel
+3.  Let's Read a Bedtime Story! - to address his tirednessLevel
+		tirednessLevel + 5
+
+4.  Or we can be lame and do nothing...
+
+5.  Exit the program.
+
+Tick Method
+
+After each turn - Danimal's levels are adjusted by the following ammounts:
+	hungerLevel - 1
+	boredomLevel -2
+	tirednesssLevel -1
+
+
+
+
+
+
+
 
 
 
