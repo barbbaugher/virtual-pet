@@ -19,7 +19,7 @@ public class VirtualPetApp {
 			String menuEntry = input.next();
 
 			switch (menuEntry) {
-			
+
 			case "1":
 				int food = 3;
 				theDanimal.letsEat(food);
@@ -46,24 +46,18 @@ public class VirtualPetApp {
 				break;
 
 			case "5":
-				System.out.println("Thanks for playing.");
+				System.out.println(theDanimal.afterExit());
 				System.exit(0);
 				break;
 
 			default:
-				System.out.println("Please select a valid menu option.\n");
+				System.out.println(theDanimal.invalidMenuOption());
 
 			}
 
 		} while (theDanimal.isTheDanimalAliveAndWell());
 
-		if (theDanimal.hungerLevel <= 0) {
-			System.out.println("You starved the Danimal to death...");
-		} else if (theDanimal.boredomLevel <= 0) {
-			System.out.println("You bored the Danimal to death...");
-		} else {
-			System.out.println("The Danimal died of exhaustion.");
-		}
+		System.out.println(theDanimal.causeOfDeath());
 
 		input.close();
 	}
