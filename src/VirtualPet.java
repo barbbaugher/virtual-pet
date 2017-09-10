@@ -46,6 +46,7 @@ public class VirtualPet {
 
 	void letsEat(int food) {
 		hungerLevel += food;
+		tirednessLevel -= 1;
 	}
 
 	public String afterEating() {
@@ -54,6 +55,7 @@ public class VirtualPet {
 
 	void letsDance(int fun) {
 		boredomLevel += fun;
+		tirednessLevel -= 1;
 	}
 
 	public String afterDancing() {
@@ -62,6 +64,8 @@ public class VirtualPet {
 
 	void letsReadABedtimeStory(int sleep) {
 		tirednessLevel += sleep;
+		hungerLevel -= 2;
+		boredomLevel -= 1;
 	}
 
 	public String afterSleeping() {
@@ -98,6 +102,6 @@ public class VirtualPet {
 	// Exit menu
 
 	public String afterExit() {
-		return ("Thanks for playing\n");
+		return ("Thanks for playing.\n");
 	}
 }

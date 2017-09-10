@@ -27,14 +27,19 @@ Activities (methods)
 
 1.  Let's Eat! - to address his hungerLevel
 		hungerLevel + 3
+		tirednessLevel - 1
 
 2.  Let's Dance! - to address his boredomLevel
 		boredomLevel + 6
+		tirednessLevel - 1
 
 3.  Let's Read a Bedtime Story! - to address his tirednessLevel
 		tirednessLevel + 5
+		hungerLevel - 2
+		boredomLevel - 1
 
 4.  Or we can be lame and do nothing...
+		The tick method runs
 
 5.  Exit the program.
 
@@ -42,8 +47,8 @@ Tick Method
 
 After each turn - Danimal's levels are adjusted by the following ammounts:
 	hungerLevel - 1
-	boredomLevel -2
-	tirednesssLevel -1
+	boredomLevel - 2
+	tirednesssLevel - 1
 
 
 
