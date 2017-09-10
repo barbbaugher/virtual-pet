@@ -46,8 +46,11 @@ Activities (methods)
 Tick Method
 
 After each turn - Danimal's levels are adjusted by the following ammounts:
+
 	hungerLevel - 1
+
 	boredomLevel - 2
+
 	tirednesssLevel - 1
 
 
