@@ -9,8 +9,6 @@ public class VirtualPetApp {
 
 		System.out.println(theDanimal.welcome());
 
-		int tickTock = 0;
-
 		do {
 
 			System.out.println(theDanimal.status());
@@ -24,25 +22,25 @@ public class VirtualPetApp {
 				int food = 3;
 				theDanimal.letsEat(food);
 				System.out.println(theDanimal.afterEating());
-				theDanimal.tickMethod(tickTock);
+				theDanimal.tickMethod();
 				break;
 
 			case "2":
 				int fun = 6;
 				theDanimal.letsDance(fun);
 				System.out.println(theDanimal.afterDancing());
-				theDanimal.tickMethod(tickTock);
+				theDanimal.tickMethod();
 				break;
 
 			case "3":
 				int sleep = 5;
 				theDanimal.letsReadABedtimeStory(sleep);
 				System.out.println(theDanimal.afterSleeping());
-				theDanimal.tickMethod(tickTock);
+				theDanimal.tickMethod();
 				break;
 
 			case "4":
-				theDanimal.tickMethod(tickTock);
+				theDanimal.tickMethod();
 				break;
 
 			case "5":

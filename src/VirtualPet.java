@@ -74,8 +74,7 @@ public class VirtualPet {
 
 	// Tick method
 
-	void tickMethod(int tickTock) {
-		tickTock++;
+	void tickMethod() {
 		hungerLevel--;
 		boredomLevel -= 2;
 		tirednessLevel--;
